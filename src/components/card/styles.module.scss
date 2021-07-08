@@ -1,0 +1,41 @@
+.provincesCard {
+  box-shadow: 0 0 4px 0.5px var(--purple-800);
+  border-radius: 1rem;
+
+  h2 {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .provinceStatus {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & div {
+      margin: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & p:first-child {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      & p:last-child {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .provincesCard {
+    .provinceStatus {
+      justify-content: space-around;
+    }
+  }
+}
